@@ -1,0 +1,22 @@
+{
+  "name": "dummy-test-la",
+  "version": "0.0.1",
+  "description": "Testing external integrations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microbecode/dummy-test.git"
+  },
+  "author": "microbecode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/microbecode/dummy-test/issues"
+  },
+  "homepage": "https://github.com/microbecode/dummy-test#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
