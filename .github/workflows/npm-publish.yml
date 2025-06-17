@@ -19,13 +19,16 @@ jobs:
           node-version: 20
           registry-url: 'https://registry.npmjs.org/'
 
-      - name: Bump patch version
+      - name: Configure Git for pushing
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
+      - name: Bump patch version
+        run: |
           npm version patch -m "chore(release): bump to %s [skip ci]"
           git push origin ${{ github.ref_name }} --follow-tags
-
 
       - name: Publish to npm
         run: npm publish
