@@ -19,6 +19,7 @@ function addTask() {
     if (taskText !== "") {
     addTaskToDOM(taskText);
     taskInput.value = "";
+    
     saveTasks();
     }
 }
@@ -49,8 +50,6 @@ function addTaskToDOM(text, done = false) {
     li.appendChild(deleteBtn);
     taskList.appendChild(li);
 }
-
-// ABBBBBBBAABBBABAABAAABBBBBABABBBAABAABABAABABBAABABABBBAAABABAABBABBABBBAABAABBAABBBAABAAABBBBBABBAABABAAAABAAABBBBAAABAABBAAAAAAABABBAAAABBABAABBABAAAAAABBAABAAABAAABBBBAABBAABBABABBBABBBBAABBAAABABABBBABBAABABBBBAABAABAABBAAABBABBABBAABBBABBBAAAABAABAAAB
 
 taskInput.addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
