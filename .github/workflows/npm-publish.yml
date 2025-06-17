@@ -24,7 +24,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           npm version patch -m "chore(release): bump to %s [skip ci]"
-          git push origin main --follow-tags
+          git push origin ${{ github.ref_name }} --follow-tags
+
 
       - name: Publish to npm
         run: npm publish
