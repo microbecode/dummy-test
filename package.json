@@ -1,6 +1,6 @@
 {
   "name": "dummy-test-la",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Testing external integrations",
   "main": "index.js",
   "scripts": {
