@@ -50,7 +50,7 @@ function addTaskToDOM(text, done = false) {
     li.appendChild(deleteBtn);
     taskList.appendChild(li);
 }
-
+//
 taskInput.addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
     addTask();
