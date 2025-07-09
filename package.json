@@ -1,8 +1,11 @@
 {
   "name": "dummy-test-la",
-  "version": "0.0.16",
+  "version": "0.0.49",
   "description": "Testing external integrations",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
